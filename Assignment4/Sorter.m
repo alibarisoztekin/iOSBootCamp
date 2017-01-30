@@ -12,7 +12,7 @@
 
 + (NSInteger) sorterMethod:(NSArray*) someArray;
 {
-    NSInteger highestNumber = 0;
+    NSInteger highestNumber = [someArray[0] integerValue];
     for (NSNumber* currentNumber in someArray)
     {
         

@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-char game (char play){
+void game (char play){
    
     int choice;
    
@@ -41,7 +41,7 @@ char game (char play){
                 break;
         }
     }
-    return 0;
+    return ;
 }
 int main(int argc, const char * argv[]) {
     char play;
@@ -54,7 +54,7 @@ int main(int argc, const char * argv[]) {
     while (play == 'y') {
         game(play);
         printf("would you like to play again?");
-        scanf(" %c", &play);
+        scanf(" %cy", &play);
     }
-    return 1;
+    return 0;
 }
